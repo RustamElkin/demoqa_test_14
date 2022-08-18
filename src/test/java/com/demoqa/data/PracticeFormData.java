@@ -1,4 +1,4 @@
-package com.demoqa.pages;
+package com.demoqa.data;
 
 import com.github.javafaker.Faker;
 

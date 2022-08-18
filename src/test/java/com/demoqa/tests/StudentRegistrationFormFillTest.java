@@ -1,7 +1,7 @@
 package com.demoqa.tests;
 
 import com.codeborne.selenide.Configuration;
-import com.demoqa.pages.PracticeFormData;
+import com.demoqa.data.PracticeFormData;
 import com.demoqa.pages.PracticeFormPage;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;

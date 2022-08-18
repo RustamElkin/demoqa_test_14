@@ -1,8 +1,10 @@
 package com.demoqa.pages;
 
 import com.codeborne.selenide.SelenideElement;
+import com.demoqa.data.PracticeFormData;
 import com.demoqa.pages.components.CalendarComponent;
 import com.demoqa.pages.components.ResultsModal;
+import com.demoqa.pages.components.StateAndCityComponent;
 import org.apache.commons.text.WordUtils;
 
 import java.io.File;
@@ -14,13 +16,14 @@ import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.executeJavaScript;
-import static com.demoqa.pages.PracticeFormData.dateOfBirth;
+import static com.demoqa.data.PracticeFormData.dateOfBirth;
 import static com.demoqa.tests.StudentRegistrationFormFillTest.practiceFormPage;
 
 public class PracticeFormPage {
 
     CalendarComponent calendarComponent = new CalendarComponent();
     ResultsModal resultsModal = new ResultsModal();
+    StateAndCityComponent stateAndCityComponent = new StateAndCityComponent();
 
 
     static SelenideElement firstName           = $("#firstName");
@@ -105,12 +108,16 @@ public class PracticeFormPage {
         currentAddress.setValue(data.currentAddress);
     }
 
-    public void fillState(PracticeFormData data) {
-        state.setValue(data.state).pressEnter();
-    }
+//    public void fillState(PracticeFormData data) {
+//        state.setValue(data.state).pressEnter();
+//    }
+//
+//    public void fillCity(PracticeFormData data) {
+//        city.setValue(data.city).pressEnter();
+//    }
 
-    public void fillCity(PracticeFormData data) {
-        city.setValue(data.city).pressEnter();
+    public void fillsStateAndCity(PracticeFormData data) {
+        stateAndCityComponent.setStateAndCity(data.state, data.city);
     }
 
     public void fillAPFFormAndSubmit(PracticeFormData data) {
@@ -130,8 +137,10 @@ public class PracticeFormPage {
         fillHobbies(data);
         fillPicture(data);
         fillCurrentAddress(data);
-        fillState(data);
-        fillCity(data);
+
+//        fillState(data);
+//        fillCity(data);
+        fillsStateAndCity(data);
 
         submitBtn.click();
 
