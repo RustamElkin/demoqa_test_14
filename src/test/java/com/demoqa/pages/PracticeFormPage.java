@@ -108,14 +108,6 @@ public class PracticeFormPage {
         currentAddress.setValue(data.currentAddress);
     }
 
-//    public void fillState(PracticeFormData data) {
-//        state.setValue(data.state).pressEnter();
-//    }
-//
-//    public void fillCity(PracticeFormData data) {
-//        city.setValue(data.city).pressEnter();
-//    }
-
     public void fillsStateAndCity(PracticeFormData data) {
         stateAndCityComponent.setStateAndCity(data.state, data.city);
     }
@@ -137,9 +129,6 @@ public class PracticeFormPage {
         fillHobbies(data);
         fillPicture(data);
         fillCurrentAddress(data);
-
-//        fillState(data);
-//        fillCity(data);
         fillsStateAndCity(data);
 
         submitBtn.click();
@@ -169,6 +158,6 @@ public class PracticeFormPage {
             enteredHobbies.shouldHave(text(data.hobbies));
             enteredPicture.shouldHave(text(data.picture));
             enteredAddress.shouldHave(text(data.currentAddress));
-            enteredStateAndCity.shouldHave(text(data.state + " " + data.city));
+            enteredStateAndCity.shouldHave(text(state + " " + city));
     }
 }
