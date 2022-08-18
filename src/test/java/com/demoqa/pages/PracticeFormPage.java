@@ -26,25 +26,26 @@ public class PracticeFormPage {
     StateAndCityComponent stateAndCityComponent = new StateAndCityComponent();
 
 
-    static SelenideElement firstName           = $("#firstName");
-    static SelenideElement lastName            = $("#lastName");
-    static SelenideElement email               = $("#userEmail");
-    static SelenideElement gender              = $("#genterWrapper");
-    static SelenideElement mobile              = $("#userNumber");
-    static SelenideElement subjects            = $("#subjectsInput");
-    static SelenideElement hobbies             = $("#hobbiesWrapper");
-    static SelenideElement picture             = $("#uploadPicture");
-    static SelenideElement currentAddress      = $("#currentAddress");
-    static SelenideElement submitBtn           = $("#submit");
-    static SelenideElement enteredStudentName  = $(".modal-body").$(byText("Student Name")).parent().lastChild();
-    static SelenideElement enteredEmail        = $(".modal-body").$(byText("Student Email")).parent().lastChild();
-    static SelenideElement enteredGender       = $(".modal-body").$(byText("Gender")).parent().lastChild();
-    static SelenideElement enteredMobile       = $(".modal-body").$(byText("Mobile")).parent().lastChild();
-    static SelenideElement enteredSubject      = $(".modal-body").$(byText("Subjects")).parent().lastChild();
-    static SelenideElement enteredHobbies      = $(".modal-body").$(byText("Hobbies")).parent().lastChild();
-    static SelenideElement enteredPicture      = $(".modal-body").$(byText("Picture")).parent().lastChild();
-    static SelenideElement enteredAddress      = $(".modal-body").$(byText("Address")).parent().lastChild();
-    static SelenideElement enteredStateAndCity = $(".modal-body").$(byText("State and City")).parent().lastChild();
+    static SelenideElement
+        firstName           = $("#firstName"),
+        lastName            = $("#lastName"),
+        email               = $("#userEmail"),
+        gender              = $("#genterWrapper"),
+        mobile              = $("#userNumber"),
+        subjects            = $("#subjectsInput"),
+        hobbies             = $("#hobbiesWrapper"),
+        picture             = $("#uploadPicture"),
+        currentAddress      = $("#currentAddress"),
+        submitBtn           = $("#submit"),
+        enteredStudentName  = $(".modal-body").$(byText("Student Name")).parent().lastChild(),
+        enteredEmail        = $(".modal-body").$(byText("Student Email")).parent().lastChild(),
+        enteredGender       = $(".modal-body").$(byText("Gender")).parent().lastChild(),
+        enteredMobile       = $(".modal-body").$(byText("Mobile")).parent().lastChild(),
+        enteredSubject      = $(".modal-body").$(byText("Subjects")).parent().lastChild(),
+        enteredHobbies      = $(".modal-body").$(byText("Hobbies")).parent().lastChild(),
+        enteredPicture      = $(".modal-body").$(byText("Picture")).parent().lastChild(),
+        enteredAddress      = $(".modal-body").$(byText("Address")).parent().lastChild(),
+        enteredStateAndCity = $(".modal-body").$(byText("State and City")).parent().lastChild();
 
 
 
