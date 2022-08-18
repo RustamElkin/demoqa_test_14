@@ -31,19 +31,15 @@ public class PracticeFormPage {
     static SelenideElement email               = $("#userEmail");
     static SelenideElement gender              = $("#genterWrapper");
     static SelenideElement mobile              = $("#userNumber");
-//    static static SelenideElement dateOfBirth = $("#dateOfBirthInput"),
     static SelenideElement subjects            = $("#subjectsInput");
     static SelenideElement hobbies             = $("#hobbiesWrapper");
     static SelenideElement picture             = $("#uploadPicture");
     static SelenideElement currentAddress      = $("#currentAddress");
-    static SelenideElement state               = $("#react-select-3-input");
-    static SelenideElement city                = $("#react-select-4-input");
     static SelenideElement submitBtn           = $("#submit");
     static SelenideElement enteredStudentName  = $(".modal-body").$(byText("Student Name")).parent().lastChild();
     static SelenideElement enteredEmail        = $(".modal-body").$(byText("Student Email")).parent().lastChild();
     static SelenideElement enteredGender       = $(".modal-body").$(byText("Gender")).parent().lastChild();
     static SelenideElement enteredMobile       = $(".modal-body").$(byText("Mobile")).parent().lastChild();
-//    static SelenideElement enteredDateOfBirth = $(".modal-body").$(byText("Date of Birth")).parent().lastChild(),
     static SelenideElement enteredSubject      = $(".modal-body").$(byText("Subjects")).parent().lastChild();
     static SelenideElement enteredHobbies      = $(".modal-body").$(byText("Hobbies")).parent().lastChild();
     static SelenideElement enteredPicture      = $(".modal-body").$(byText("Picture")).parent().lastChild();
@@ -158,6 +154,6 @@ public class PracticeFormPage {
             enteredHobbies.shouldHave(text(data.hobbies));
             enteredPicture.shouldHave(text(data.picture));
             enteredAddress.shouldHave(text(data.currentAddress));
-            enteredStateAndCity.shouldHave(text(state + " " + city));
+            enteredStateAndCity.shouldHave(text(data.state + " " + data.city));
     }
 }
