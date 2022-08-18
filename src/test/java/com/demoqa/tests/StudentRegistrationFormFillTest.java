@@ -16,9 +16,9 @@ public class StudentRegistrationFormFillTest {
     static void setup() {
 //        Configuration.holdBrowserOpen = true;
 //        Configuration.timeout = 10000; // 10 seconds
-//        Configuration.browserSize = "1920x1080";
+        Configuration.browserSize = "1920x1080";
         // поменял разрешение экрана на маке, иначе тест не проходит
-        Configuration.browserSize = "1366x768";
+//        Configuration.browserSize = "1366x768";
         Configuration.browserPosition = "0x0";
         Configuration.baseUrl = "https://demoqa.com";
     }
