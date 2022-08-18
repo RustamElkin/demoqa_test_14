@@ -21,7 +21,7 @@ public class PracticeFormData {
 //        dateOfBirthData = dateToString.format(faker.date().birthday()),
 
    public String hobbies = "Sports";
-   public String picture = "test upload.jpg";
+   public String picture = "uploadImg.jpg";
    public String currentAddress = faker.address().streetAddress();
    public String state = "NCR";
    public String city = "Delhi";
